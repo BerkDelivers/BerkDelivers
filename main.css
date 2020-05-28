@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap');
+
+:root {
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    transition: all .2s ease-in-out;
+}
+
+.banner {
+    height: 400px;
+    margin: 50px 0;
+    background-position: 100px -50px; 
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+/* COVID CONTENT */
+
+#covid {
+    font-size: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #39AA94;
+    z-index: 100;
+    line-height: 40px;
+}
+#covid h1 {
+    padding-left: 25px;
+}
+#covid-lm {
+    color: white;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#covid-lm:hover{
+    text-decoration: underline;
+}
+#covid i {
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+#covid-modal {
+    display: none;
+    border-radius: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 40%;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 200;
+    max-height: 80%;
+    overflow: scroll;
+}
+#covid-modal h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#covid-modal p {
+    line-height: 30px;
+    font-size: 20px;
+    margin: 25px 0;
+}
+#covid-modal i {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* END COVID CONTENT */
+
+
+#oval, #oval-large, #boxes {
+    position: absolute;
+}
+
+#oval {
+    top: 55%;
+    left: 35%;
+}
+#oval-large {
+    top: -100px;
+    right: 30px;
+}
+#boxes {
+    width: 600px;
+    height: auto;
+    bottom: 10px;
+    right: 50px;
+}
+
+
+.nav {
+    position: relative;
+}
+.nav h1 {
+    margin-left: 5%;
+    padding-top: 40px;
+    font-size: 30px;
+}
+.nav ul {
+    margin-top: -100px;
+    margin-right: 10%;
+    text-align: right;
+}
+.nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.nav ul li:hover, .nav ul li a:hover {
+    color: #131515;
+    cursor: pointer;
+}
+.nav-burger {
+    display: none !important;
+}
+
+.hero {
+    position: relative;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.hero h1 {
+    font-size: 80px;
+    font-weight: 800;
+    width: 600px;
+}
+.hero p {
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.logo {
+    width: 150px;
+    padding: 50px;
+    color: white;
+}
+
+
+.landing {
+    height: 100vh;
+    color:white;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #080739, #39AA94);
+}
+
+
+
+/* PARTNERS */
+hr {
+    width: 40%;
+    margin: 100px 30% 0 30%;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+.subtitle {
+    text-align: center;
+}
+
+.partners {
+    margin: 10%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    row-gap: 75px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto;
+}
+.partners a {
+    color: #131515;
+    text-decoration: none;
+}
+.partners i {
+    font-size: 30px;
+    padding: 10px;
+}
+.partners div h1 {
+    cursor: pointer;
+}
+.partners a:hover {
+    color: #ff5964;
+    cursor: pointer;
+}
+
+.getintouch {
+    text-align: center;
+}
+.getintouch p {
+    border: 1px solid #ff5964;
+    width: 20vw;
+    margin: 20px 40vw;
+    padding: 10px 0;
+    color: #ff5964;
+    font-weight: 400;
+    cursor: pointer;
+}
+.getintouch p:hover{
+    border-radius: 10px;
+    color: white;
+    background-color: #ff5964;
+}
+
+.who {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+#who-big {
+    font-size: 80px;
+}
+#who-img {
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+    border-radius: 40px;
+}
+
+.bios {
+    display: grid;
+    grid-template-areas:
+        'bio1 bio2'
+        'desc desc';
+        justify-items: center;
+        align-items: center;
+    column-gap: 25px;
+}
+#bio1 {
+    grid-area: bio1;
+}
+#bio2 {
+    grid-area: bio2;
+}
+.bios img {
+    text-align: center;
+    width: 100%;
+    border-radius: 400px;
+}
+.bios h1 {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.bios p {
+    text-align: center;
+}
+#desc {
+    text-align: left;
+    grid-area: desc;
+    margin-top: 25px;
+    line-height: 30px;
+}
+#learnmore {
+    color: #ff5964;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #131515;
+    color: white;
+    padding: 25px;
+}
+footer ul {
+    padding: 10px;
+}
+footer ul li {
+    display: inline;
+    font-size: 30px;
+    padding: 0 25px;
+}
+footer ul li a {
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    border-radius: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 40%;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal i {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal form h1 {
+    position: relative;
+    font-size: 60px;
+    width: 300px;
+    margin-left: 5%;
+    letter-spacing: 2px;
+}
+.modal form input{
+    position: relative;
+    display: block;
+    height: 40px;
+}
+.modal input, textarea {
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 300px;
+    margin: 10px;
+    margin-left: 5%;
+    padding-left: 10px;
+    font-weight: 700;
+}
+.modal textarea {
+    height: 100px;
+    max-height: 200px;
+    min-height: 100px;
+    padding-top: 5px;
+}
+#submit {
+    text-align: center;
+    border-radius: 50px;
+    width: 100px !important;
+    padding-left: 0 !important;
+    background-color: #ff5964 !important;
+    color: white;
+}
+
+#mail {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+}
+#clipped {
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+#mobileNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.15s;
+    padding-top: 60px;
+}
+#mobileNav ul {
+    text-align: left;
+    list-style-type: none;
+    color:white;
+    padding: 25px;
+    font-weight: 700;
+    font-size: 40px;
+}
+#mobileNav ul li {
+    margin: 25px;
+    cursor: pointer;
+}
+#mobileNav ul li:hover {
+    color: #ff5964;
+}
+#mobileNav i {
+    float: right;
+    font-size: 40px;
+    color: white;
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .modal input, textarea {
+        width: 80%;
+        margin: 5% 10%;
+        max-width: none;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    .modal textarea {
+        height: 100px;
+        max-height: 200px;
+        min-height: 100px;
+        padding-top: 5px;
+    }
+    #mail {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #covid {
+        font-size: 5px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #covid h1 {
+        padding-left: 5px;
+    }
+    #covid i {
+        margin-right: 5px;
+        margin-top: -50px;
+    }
+    #covid-modal{
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    #oval {
+        top: 67%;
+        width: 80px;
+        left: 50%;
+    }
+    #oval-large {
+        top: -50px;
+        width: 200px;
+        right: 100px;
+    }
+    #boxes {
+        width: 200px;
+        height: auto;
+        bottom: 10px;
+        right: 10%;
+    }
+
+    .logo {
+        padding-left: 5%;
+    }
+
+    .title {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .banner {
+        background-position: center;
+    }
+
+    .nav h1 {
+        padding-top: 80px;
+        font-size: 30px;
+    }
+    .nav ul {
+        display: none;
+    }
+    .nav-burger{
+        display: block !important;
+        float: right;
+        margin-right: 20px;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .hero {
+        margin-left: 10%;
+        margin-top: 15%;
+    }
+    .hero h1 {
+        font-size: 55px;
+        font-weight: 800;
+        max-width: 100%;
+    }
+    .hero p {
+        margin-top: 75px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 40px;
+    }
+    .hero p {
+        width: 60%;
+    }
+
+    .partners {
+        row-gap: 75px;
+        grid-template-columns: 50% 50%;
+    }
+    .getintouch p {
+        width: 40vw;
+        margin: 20px 30vw;
+        padding: 10px 0;
+        color: #ff5964;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+
+    .who {
+        display: block;
+    }
+    
+    #who-big {
+        font-size: 70px;
+    }
+    #who-img {
+        margin-bottom: 25px;
+    }
+    
+    .bios {
+        grid-template-areas:
+            'desc'
+            'bio1'
+            'bio2';
+        column-gap: 50px !important;
+    }
+    .bios h1 {
+        margin-top: 25px;
+    }
+    .bios p {
+        font-size: 10px;
+    }
+    .bios img {
+        width: 70% !important;
+        margin: 0 15%;
+    }
+    #bio2 {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    #desc {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+    #learnmore {
+        color: #ff5964;
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 80%;
+    }
+    .modal i {
+        font-size: 25px;
+    }
+    .modal form h1 {
+        font-size: 50px;
+        width: 250px;
+    }
+
+    .modal input, textarea {
+        width: 80%;
+        margin: 5% 10%;
+
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    .modal textarea {
+        height: 100px;
+        max-height: 200px;
+        min-height: 100px;
+        padding-top: 5px;
+    }
+    #submit {
+        text-align: center;
+        border-radius: 50px;
+        width: 100px !important;
+        padding-left: 0 !important;
+        background-color: #ff5964 !important;
+        color: white;
+    }
+    
+    #mail {
+        display: none;
+    }
+    #clipped {
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
+
+
+}

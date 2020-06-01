@@ -7,11 +7,26 @@
         covid: document.querySelector('#covid'),
     }
 
+    let slideShowImages = [
+        'media/stock1.jpeg',
+        'media/stock2.jpeg',
+        'media/stock3.jpeg',
+    ]
+    let slideCount = 1;
+
     let isMobileNavVisible = false;
 
     window.onload = () => {
         setupEvents();
+        document.querySelector(".landing").style.backgroundImage = `url("${slideShowImages[0]}")`
+        setInterval(createSlideShow, 5000);
+    }
 
+    let createSlideShow = () => {
+        console.log("TEST", slideCount)
+        document.querySelector(".landing").style.backgroundImage = `url("${slideShowImages[slideCount]}")`
+        slideCount++;
+        if(slideCount > slideShowImages.length-1) slideCount = 0;
     }
 
     let load = (section) => {

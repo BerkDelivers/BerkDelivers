@@ -84,28 +84,6 @@
 
 
 /* END COVID CONTENT */
-
-
-#oval, #oval-large, #boxes {
-    position: absolute;
-}
-
-#oval {
-    top: 55%;
-    left: 35%;
-}
-#oval-large {
-    top: -100px;
-    right: 30px;
-}
-#boxes {
-    width: 600px;
-    height: auto;
-    bottom: 10px;
-    right: 50px;
-}
-
-
 .nav {
     position: relative;
 }
@@ -122,6 +100,7 @@
 .nav ul li {
     display: inline;
     margin: 0 20px;
+    color:white;
 }
 .nav ul li a {
     color: white;
@@ -139,6 +118,7 @@
     position: relative;
     margin-left: 10%;
     margin-top: 15%;
+    color: #ff5964;
 }
 .hero h1 {
     font-size: 80px;
@@ -153,18 +133,15 @@
 .logo {
     width: 150px;
     padding: 50px;
-    color: white;
 }
 
 
 .landing {
     height: 100vh;
-    color:white;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #080739, #39AA94);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-
 
 /* PARTNERS */
 hr {
@@ -444,23 +421,6 @@ footer ul li a {
     #covid-modal{
         width: 80%;
         margin-top: 15px;
-    }
-
-    #oval {
-        top: 67%;
-        width: 80px;
-        left: 50%;
-    }
-    #oval-large {
-        top: -50px;
-        width: 200px;
-        right: 100px;
-    }
-    #boxes {
-        width: 200px;
-        height: auto;
-        bottom: 10px;
-        right: 10%;
     }
 
     .logo {

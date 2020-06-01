@@ -7,6 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/8dc16f6ced.js" crossorigin="anonymous"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167932240-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-167932240-1');
+        </script>
+
     </head>
     <body>
         <!-- COVID RESPONSE CONTENT -->
@@ -48,9 +58,6 @@
 
         <!-- Landing -->
         <section class='landing'>
-            <img id='boxes' src='media/boxes.svg'/>
-            <img id='oval' src='media/oval.png'/>
-            <img id='oval-large' src='media/oval_large.png'/>
             <div class='nav'>
                 <a href='index.html'><img  class='logo' src='media/logo.png'></a>
                 <i class="nav-burger fas fa-hamburger" id='ham'></i>
@@ -93,7 +100,13 @@
                 <div>
                     <a href='http://mooninthepond.org/order/' target='_blank'>
                         <i class="fas fa-carrot"></i>
-                        <h1>Moon In The Pont Farm</h1>
+                        <h1>Moon In The Pond Farm</h1>
+                    </a>
+                </div>
+                <div>
+                    <a href='https://drive.google.com/file/d/1n_4VlzqGjH6YpKTfc5LCGugADAQVH0Cr/preview' target='_blank'>
+                        <i class="fas fa-utensils"></i>
+                        <h1>Prairie Whale</h1>
                     </a>
                 </div>
             </div>
@@ -168,7 +181,6 @@
                 <li id='mobile-nav-contact'>Contact</li>
             </ul>
         </div>
-
         <script src='index.js'></script>
     </body>
 </html>

@@ -8,9 +8,11 @@
     }
 
     let slideShowImages = [
-        'media/stock1.jpeg',
         'media/stock2.jpeg',
         'media/stock3.jpeg',
+        'media/stock1.png',
+        'media/stock4.jpeg',
+        'media/stock5.jpeg',
     ]
     let slideCount = 1;
 
@@ -23,7 +25,6 @@
     }
 
     let createSlideShow = () => {
-        console.log("TEST", slideCount)
         document.querySelector(".landing").style.backgroundImage = `url("${slideShowImages[slideCount]}")`
         slideCount++;
         if(slideCount > slideShowImages.length-1) slideCount = 0;
